@@ -42,14 +42,14 @@
 }
 .col-sm-3 .content {
   background-color: white;
-  height: 5vh;
+  height: 10vh;
   border-radius: .25rem;
   padding: 10px;
 }
 
 .col-sm-12 .content {
   background-color: white;
-  height: 82vh;
+  height: 75vh;
   border-radius: .25rem;
   padding: 10px;
 }
