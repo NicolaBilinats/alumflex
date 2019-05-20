@@ -4,7 +4,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import borderImage from "../images/border1.png";
 import landScapeImage from "../images/landscape.png";
 import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
-import { Pagination, Navigation } from 'swiper/dist/js/swiper.esm'
+import {Pagination, Navigation} from 'swiper/dist/js/swiper.esm'
 import Sl1 from '../images/slider/1.jpg';
 import Sl2 from '../images/slider/2.jpg';
 import Sl3 from '../images/slider/3.jpg';
@@ -42,11 +42,11 @@ export default class MainPage extends Component {
             },
         };
         const SimpleSwiper = () => (
-            <Swiper {...params}>
+            <Swiper {...params} activeSlideKey='5'>
                 <div><img src={Sl1} alt=""/></div>
                 <div><img src={Sl2} alt=""/></div>
                 <div><img src={Sl3} alt=""/></div>
-                <div><img src={Sl4} alt=""/></div>
+                <div key='5'><img src={Sl4} alt=""/></div>
                 <div><img src={Sl5} alt=""/></div>
                 <div><img src={Sl6} alt=""/></div>
 
@@ -63,29 +63,15 @@ export default class MainPage extends Component {
                                 </Col>
                             </Row>
                             <hr/>
-                            {/*<Row>*/}
-                                {/*<Col sm={12}>*/}
-                                    {/*<h5>Алюминиевый бордюр для ландшафтных работ.*/}
-                                        {/*Чистое решение благоустройства территории</h5>*/}
-                                {/*</Col>*/}
-                            {/*</Row>*/}
+                            <p style={{textAlign: "center"}}> <strong>Alumflex®</strong>: предназначен для проектных и монтажных организаций, коммерческих
+                                компаний и частным лицам
+                            </p>
                             <Row>
                                 <Col sm={6}>
                                     <Row>
                                         <Col sm={6}>
-                                            <ul>
-                                                <li><strong>Простота монтажа</strong></li>
-                                                <li><strong>Прочность</strong></li>
-                                                <li><strong>Долговечность</strong></li>
-                                            </ul>
-                                            Концепция разграничения твердых поверхностей алюминием имеет четкие и определенные преимущества:
-                                        </Col>
-                                        <Col sm={6}>
-                                            <img src={borderImage} alt=""/>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col sm={12} >
+                                            <p>Концепция разграничения твердых поверхностей алюминием имеет четкие и
+                                                определенные преимущества:</p>
                                             <ul>
                                                 <li>
                                                     Быстрая и простая установка
@@ -97,6 +83,9 @@ export default class MainPage extends Component {
                                                     Больше возможностей для ландшафтных решений
                                                 </li>
                                             </ul>
+                                        </Col>
+                                        <Col sm={6}>
+                                            <img src={borderImage} alt=""/>
                                         </Col>
                                     </Row>
                                 </Col>
@@ -123,11 +112,7 @@ export default class MainPage extends Component {
                                             <img src={landScapeImage} alt=""/>
                                         </Col>
                                     </Row>
-                                    <Row>
-                                        <Col sm={12}>
-                                            Alumflex®: предназначен для проектных и монтажных организаций, коммерческих компаний и частным лицам
-                                        </Col>
-                                    </Row>
+
                                 </Col>
                             </Row>
                         </div>
