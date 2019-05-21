@@ -45,9 +45,18 @@ body {
 }
 .col-sm-3 .content {
   background-color: white;
-  height: 10vh;
+  height: 6vh;
   border-radius: .25rem;
   padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  font-weight: bold;
+}
+
+.col-sm-3 .content:hover {
+  background-color: #eeeeee;
+
 }
 
 .col-sm-12 .content {
@@ -60,4 +69,12 @@ img {
   max-height: 300px;
   max-width: 700px;
   width: 100%;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
 }

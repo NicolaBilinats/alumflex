@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './mainPage.css';
-import {Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import borderImage from "../images/border1.png";
 import landScapeImage from "../images/landscape.png";
 import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
@@ -11,6 +11,7 @@ import Sl3 from '../images/slider/3.jpg';
 import Sl4 from '../images/slider/4.jpg';
 import Sl5 from '../images/slider/5.jpg';
 import Sl6 from '../images/slider/6.jpg';
+import {Link} from "react-router-dom";
 
 export default class MainPage extends Component {
 
@@ -63,7 +64,8 @@ export default class MainPage extends Component {
                                 </Col>
                             </Row>
                             <hr/>
-                            <p style={{textAlign: "center"}}> <strong>Alumflex®</strong>: предназначен для проектных и монтажных организаций, коммерческих
+                            <p style={{textAlign: "center"}}><strong>Alumflex®</strong>: предназначен для проектных и
+                                монтажных организаций, коммерческих
                                 компаний и частным лицам
                             </p>
                             <Row>
@@ -120,24 +122,32 @@ export default class MainPage extends Component {
                 </Row>
                 <Row>
                     <Col sm={3}>
-                        <div className="content">
-                            Почему AlumFlex?
-                        </div>
+                        <Link to="/why">
+                            <div className="content">
+                                Почему AlumFlex?
+                            </div>
+                        </Link>
                     </Col>
                     <Col sm={3}>
-                        <div className="content">
-                            Монтаж
-                        </div>
+                        <Link to="/installation">
+                            <div className="content">
+                                Монтаж
+                            </div>
+                        </Link>
                     </Col>
                     <Col sm={3}>
-                        <div className="content">
-                            Спецификации
-                        </div>
+                        <Link to="/spec">
+                            <div className="content">
+                                Спецификации
+                            </div>
+                        </Link>
                     </Col>
                     <Col sm={3}>
-                        <div className="content">
-                            Где приобрести
-                        </div>
+                        <Link to="/where">
+                            <div className="content">
+                                Где приобрести
+                            </div>
+                        </Link>
                     </Col>
                 </Row>
             </Container>
